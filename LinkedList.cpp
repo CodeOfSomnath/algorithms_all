@@ -9,7 +9,6 @@ LinkedList::LinkedList()
 
 LinkedList::~LinkedList()
 {
-	std::cout << "Deleting linkedlist" << std::endl;
 	if (this->head != nullptr)
 	{
 		delete this->head;
@@ -17,8 +16,6 @@ LinkedList::~LinkedList()
 	}
 
 }
-
-
 
 
 void LinkedList::Append(int item)
