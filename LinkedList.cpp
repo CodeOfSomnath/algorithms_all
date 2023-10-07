@@ -9,12 +9,13 @@ LinkedList::LinkedList()
 
 LinkedList::~LinkedList()
 {
-	delete head;
-	//delete tail;
-	if (this->tail != nullptr)
+	std::cout << "Deleting linkedlist" << std::endl;
+	if (this->head != nullptr)
 	{
-		delete this->tail;
+		delete this->head;
+		this->head = nullptr;
 	}
+
 }
 
 

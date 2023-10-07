@@ -1,4 +1,5 @@
 #include "Node.h"
+#include <iostream>
 
 Node::Node() {
 	this->next = nullptr;
@@ -6,5 +7,10 @@ Node::Node() {
 }
 Node::~Node()
 {
-	delete next;
+	std::cout << "Deleting next" << std::endl;
+	if (this->next != nullptr)
+	{
+		delete this->next;
+		this->next = nullptr;
+	}
 }
